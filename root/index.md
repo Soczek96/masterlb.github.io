@@ -52,7 +52,7 @@
             <select class="inp" name="Location" value="Your Location">
               <option value="Your Location">Your Location</option>
               <option value="Warsaw">Warsaw</option>
-              <option value="Berlin">Berlin</option>
+              <option value="Berlin">Berjlin</option>
               <option value="Paris">Paris</option>
               <option value="London">London</option>
             </select>
