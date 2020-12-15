@@ -1,0 +1,256 @@
+body {
+  background-image: url("../images/Background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.top_logo{
+margin: 56px auto 25px auto;
+text-align: center;
+display:grid;
+grid-template-columns: auto auto;
+justify-content: center;
+column-gap: 0px;
+}
+
+.top_img_logo img{
+  width: 111px;
+  height: 111px;
+  opacity: 30%;
+}
+
+
+}
+
+.top_logo .top_logo_text  img{
+  width: 292px;
+  height: 78px;
+  opacity: 30%;
+  margin-left: 26px;
+  margin-top: 20px;
+}
+
+.inp{
+  font-family: TitilliumText22L Light, Arial;
+  font-size: 16px;
+  box-sizing: border-box;
+  width: 278px;
+  padding: 12px;
+  border: none;
+}
+
+select.inp{
+  -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.inputbox{
+  margin: 20px auto 0px auto;
+  border-radius: 2px;
+  border-color: #c6c6c6;
+  border-width: 1px;
+  border-style: solid;
+  display:grid;
+  grid-template-columns: 60px 278px;
+}
+
+
+.imgbox{
+  margin: auto;
+  border-right: 1px solid #e3e3e3;
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-right: 20px;
+}
+
+.imgbox img{
+  opacity: 15%;
+}
+
+input[type="checkbox" i]{
+  width: 22px;
+  margin: 0px;
+}
+p.form_description{
+  font-family: TitilliumText22L Light, Arial;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 34px;
+  color: #FFFFFF;
+  line-height: 1.2;
+  text-shadow: 0px 2px 2px rgba(43, 1, 0, 0.75);
+}
+
+}
+
+textarea{
+  font-family: TitilliumText22L Light, Arial;
+  font-size: 16px;
+  width: 338px;
+  margin: auto;
+  margin-top: 20px;
+  box-sizing: border-box;
+  height: 230px;
+  border-radius: 2px;
+  border-color: #c6c6c6;
+  border-width: 1px;
+  border-style: solid;
+}
+
+button{
+  font-family: TitilliumText22L Light, Arial;
+  font-size: 24px;
+  background-color: #8ccc27;
+  border-radius: 2px;
+  border: 1px solid #3b9a00;
+  height: 48px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  text-shadow: 1px 1px 2px rgba(81, 133, 14, 1);
+}
+
+button.one_button{
+  width: 338px;
+  margin: 0 auto 17px auto;
+}
+
+button.one_small_but{
+  width: 138px;
+}
+
+button.two_but{
+  width: 148px;
+}
+
+
+.form_div{
+  background-color: rgba(0, 0, 0, 0.23);
+  width: 382px;
+  margin: auto;
+  border-radius: 2px;
+  padding: 17px;
+}
+
+
+.form_grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #F4F4F4;
+  opacity: 100%;
+}
+
+.nested{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 20px auto 27px auto;
+  column-gap: 37px;
+}
+
+.bottom_logo{
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "logo_img logo_text"
+    "website website";
+  justify-content: center;
+  margin-bottom: 74px;
+}
+
+/* Customize the label (the container) */
+.check_container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  padding-top: 5px;
+  margin: 14px auto 18px 21px;
+  cursor: pointer;
+  font-family: TitilliumText22L Light, Arial;
+  font-size: 17px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.check_container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #FFFFFF;
+  border: 1px solid #C6C6C6;
+
+}
+
+
+/* When the checkbox is checked, add a blue background */
+.check_container input:checked ~ .checkmark {
+  background-image: url(../images/Shape_10.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.check_container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+
+.logo_img {grid-area: logo_img;}
+.logo_img img {
+  width: 75px;
+  height: 75px;
+  opacity: 20%;
+}
+.logo_text {grid-area: logo_text;}
+.logo_text img{
+  width: 263px;
+  height: 70px;
+  opacity: 20%;
+}
+.website {
+  grid-area: website;
+  text-align: center;}
+.website img{
+  width: 246px;
+  height: 18px;
+  opacity: 20%;
+}
+
+@media screen and (min-width: 900px) {
+  body{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "top_logo top_logo"
+    "right left";
+}
+.top_logo { grid-area: top_logo; }
+.right {
+  grid-area: right;
+  margin-bottom: 74px;}
+.left {
+  grid-area: left;
+  margin-bottom: 74px;}
+  }
